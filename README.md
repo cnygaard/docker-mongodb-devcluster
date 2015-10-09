@@ -18,7 +18,7 @@ sudo docker run -it 4eef
 
 == Start all mongodb processes rs0,rs1 and config server ==
 
-4eef # /root/mongodb.sh
+4eef # /root/mongo.sh
 
 == Initilize replica set 0 rs0 and replica set 1 rs1 ==
 
