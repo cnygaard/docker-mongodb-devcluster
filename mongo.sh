@@ -10,4 +10,5 @@ mongod --replSet "rs1" --port 27022 --dbpath /var/lib/mongo/5 --logpath /root/5.
 mongod --replSet "rs1" --port 27023 --dbpath /var/lib/mongo/6 --logpath /root/6.log --fork
 
 # Config server
-mongod --port 27024 --dbpath /var/lib/mongo/7 --logpath /root/7.log --fork --configsvr 
+mongod --port 27024 --dbpath /var/lib/mongo/7 --logpath /root/7.log --fork --configsvr
+mongos --configdb $HOSTNAME:27024 --logpath /root/8.log --fork 
